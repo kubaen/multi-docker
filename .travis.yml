@@ -12,12 +12,12 @@ after_success:
   - docker build -t kubaen/multi-client ./client
   - docker build -t kubaen/multi-nginx ./nginx
   - docker build -t kubaen/multi-server ./server
-  - docker build -t kubaen/multi-server ./worker
+  - docker build -t kubaen/multi-worker ./worker
 # Log in to docker hub via CLI
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
 # Push images to docker hub
   - docker push kubaen/multi-client
   - docker push kubaen/multi-nginx
   - docker push kubaen/multi-server
-  - docker push kubaen/multi-server
+  - docker push kubaen/multi-worker
 

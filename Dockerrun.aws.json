@@ -19,7 +19,7 @@
             "image": "kubaen/multi-client",
             "hostname": "worker",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },
         {
             "name": "nginx",

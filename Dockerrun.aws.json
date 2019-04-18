@@ -16,10 +16,10 @@
         },
         {
             "name": "worker",
-            "image": "kubaen/multi-client",
+            "image": "kubaen/multi-worker",
             "hostname": "worker",
             "essential": false,
-            "memory": 256
+            "memory": 128
         },
         {
             "name": "nginx",
